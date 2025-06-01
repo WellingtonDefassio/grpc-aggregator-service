@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: grpc-aggregator-service
+
+grpc:
+  client:
+    stock-service:
+        address: static://localhost:7575
+        negotiationType: PLAINTEXT
+    user-service:
+        address: static://localhost:6565
+        negotiationType: PLAINTEXT
